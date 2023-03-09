@@ -14,7 +14,8 @@ request(url, async (err, res, body) => {
     await new Promise((resolve, reject) => {
       request(character, (err, res, body) => {
         err && console.log(err);
-        console.log(JSON.parse(body).name);
+        
+	console.log(JSON.parse(body).name);
         resolve();
       });
     });
